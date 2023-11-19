@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --Medium-Slate-Blue: #6343d8;
+  --bg-btn: #754ffe;
+  --color-btn: #fff;
+  --color-text: #754ffe;
+  --f-family: "Inter", "sans-serif";
+  --bg-light: #e3dcff;
+  --bg-demo: #64748b;
+  --fs: 14px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--f-family);
+  font-size: var(--fs);
+}
+
+.text-Medium-Slate-Blue {
+  color: var(--color-text);
+}
+.icon-Medium-Slate-Blue {
+  color: var(--color-text);
+  background-color: var(--bg-light);
+}
+
+.btn-Medium-Slate-Blue {
+  background-color: var(--bg-btn);
+  color: var(--color-btn);
+  padding: 12px 20px;
+}
+
+.btn-Medium-Slate-Blue:hover,
+.btn-Medium-Slate-Blue:focus,
+.btn-Medium-Slate-Blue:active {
+  background-color: var(--Medium-Slate-Blue);
+  color: var(--color-btn);
+}
+
+.navbar {
+  padding: 1rem;
+}
+.navbar .navbar-brand {
+  font-size: 0;
+  padding-bottom: 0.2rem;
+  padding-top: 0;
+}
+.navbar .navbar-toggler {
+  border: 1px solid var(--Medium-Slate-Blue);
+  margin-left: 0.5rem;
+  padding: 0.5rem;
+}
+
+.navbar .navbar-toggler .icon-bar {
+  background-color: var(--Medium-Slate-Blue);
+  display: block;
+  height: 2px;
+  margin-top: 0.25rem;
+  transition: all 0.2s;
+  width: 20px;
+}
+
+.navbar-toggler:focus {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: none;
+}
+
+.navbar .navbar-toggler .top-bar {
+  transform: rotate(45deg);
+  transform-origin: 16% 190%;
+}
+.navbar .navbar-toggler .middle-bar {
+  opacity: 0;
+}
+.navbar .navbar-toggler .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 10% -80%;
+}
+
+.navbar .navbar-toggler.collapsed .top-bar {
+  transform: rotate(0);
+}
+.navbar .navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+}
+.navbar .navbar-toggler.collapsed .bottom-bar {
+  transform: rotate(0);
+}
+
+@media (max-width: 992px) {
+  .navbar-dark {
+    background-color: #fff;
+    border-bottom: 1px solid #cbd5e1;
+  }
+  .navbar .navbar-nav .dropdown-menu,
+  .navbar .navbar-nav .dropdown-menu .dropdown-submenu .dropdown-menu {
+    box-shadow: none;
+    margin: 0;
+  }
+
+  .navbar .navbar-nav .dropdown-menu,
+  .navbar .navbar-nav .dropdown-menu .dropdown-submenu .dropdown-menu {
+    box-shadow: none;
+    margin: 0;
+  }
+  .dropdown-toggle {
+    border-bottom: 1px solid #cbd5e1;
+  }
+}
+
+.navbar-dark .navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+}
+
+.nav-link,
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show,
+.nav-link:active,
+.nav-link:focus {
+  color: #0f172a;
+  font-weight: 500;
+}
+
+.nav-link:hover,
+.nav-link:active,
+.dropdown-item:hover,
+.dropdown-toggle:hover {
+  color: var(--Medium-Slate-Blue);
+}
+
+.dropdown-toggle:after {
+  border: 0;
+  content: "v";
+  float: right;
+  margin-left: 0.255em;
+  vertical-align: 0.255em;
+  color: rgb(77, 76, 76);
+}
+
+.dropend .dropdown-toggle:after {
+  content: "ʌ";
+}
+
+.dropend .dropdown-toggle:after,
+.dropup .dropdown-toggle:after {
+  border: none;
+  display: inline-block;
+  margin-left: 0.255em;
+  vertical-align: 0.255em;
+}
+
+/* .dropstart .dropdown-toggle:before {
+  border: 0;
+  content: "\e92f";
+  display: inline-block;
+  font-family: Feather !important;
+  margin-right: 0.255em;
+} */
+
+.navbar .dropdown-menu {
+  border: none;
+  border-radius: 0.5rem;
+  color: #0f172a;
+  font-size: 0.875rem;
+  line-height: 1.2rem;
+  margin: 1.125rem 0;
+  min-width: 12rem;
+  padding: 1rem 0;
+  top: 26px;
+}
+
+.dropdown-item {
+  color: #0f172a;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 28px;
+  padding: 0.125rem 1.2rem;
+  background-color: transparent;
+  border: 0;
+  clear: both;
+  display: block;
+  font-weight: 400;
+  text-align: inherit;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.dropdown-item:focus,
+.dropdown-item:active {
+  background-color: #f8f9fa;
+  border-radius: 0;
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.navbar .dropdown-menu .dropdown-submenu.dropend .dropdown-menu {
+  border-radius: 0.5rem;
+  left: 100%;
+  min-width: 12rem;
+  right: 0;
+  top: -18px;
+}
+
+.navbar .dropdown-menu {
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 30px 0 rgba(31, 45, 61, 0.26);
+  color: #0f172a;
+  font-size: 0.875rem;
+  line-height: 1.2rem;
+  margin: 1.125rem 0;
+  min-width: 12rem;
+  padding: 1rem 0;
+  top: 26px;
+}
+
+.dropdown-text {
+  font-size: 0.75rem;
+  line-height: 1.4;
+}
+
+.list-group-item {
+  border: none;
+}
+
+.list-group-item:hover,
+.list-group-item:focus,
+.list-group-item:active {
+  background-color: #f8f9fa;
+  border-radius: 0;
+  color: #000;
+  text-decoration: none;
+}
